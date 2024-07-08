@@ -17,7 +17,7 @@ For demo purposes, you can use the following credentials:
 - Task Completion Tracking
 - Data Persistence
 - RESTful API
-- Asynchronous Processing with RabbitMQ
+- Asynchronous Processing with Celery with Redis
 - Data Analysis
 
 ## Technology Stack
@@ -27,7 +27,6 @@ For demo purposes, you can use the following credentials:
 - Database: SQLAlchemy with SQLite
 - Authentication: Flask-Login
 - Session Management: Flask-Session
-- Message Queue: RabbitMQ
 - Asynchronous Tasks: Celery
 - API: Flask-based RESTful API
 - Deployment: PythonAnywhere
