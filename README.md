@@ -17,7 +17,7 @@ For demo purposes, you can use the following credentials:
 - Task Completion Tracking
 - Data Persistence
 - RESTful API
-- Asynchronous Processing
+- Asynchronous Processing with RabbitMQ
 - Data Analysis
 
 ## Technology Stack
@@ -27,9 +27,17 @@ For demo purposes, you can use the following credentials:
 - Database: SQLAlchemy with SQLite
 - Authentication: Flask-Login
 - Session Management: Flask-Session
-- Asynchronous Tasks: Celery with Redis
+- Message Queue: RabbitMQ
+- Asynchronous Tasks: Celery
 - API: Flask-based RESTful API
 - Deployment: PythonAnywhere
+
+## Key Requirements Fulfilled
+
+- Messaging Queue: Implemented using RabbitMQ for asynchronous task processing
+- REST API: Provides programmatic access to task data
+- Persistence Data Storage: Uses SQLite database for storing user and task information
+- Data Analysis: Includes basic statistics on task completion and user productivity
 
 ## Repository
 
@@ -42,7 +50,8 @@ The source code for TaskMaster is available at: https://github.com/aqsaakhan/tas
 3. Install dependencies: `pip install -r requirements.txt`
 4. Set up environment variables
 5. Initialize the database
-6. Run the application: `python app.py`
+6. Ensure RabbitMQ is installed and running
+7. Run the application: `python app.py`
 
 For detailed installation instructions, please refer to the project documentation.
 
